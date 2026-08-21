@@ -116,7 +116,7 @@ const Footer = () => (
           <div className="footer-col">
             <h3>Facebook</h3>
             <div className="fb-widget">
-              <p>Fanpage Dichvusangten.com.vn</p>
+              <p>Fanpage Dichvusangtenhcm.com</p>
               <a href="https://www.facebook.com/qui.nguyenhoang.184" target="_blank" rel="noopener noreferrer" className="btn-fb"><i className="fab fa-facebook"></i> Theo dõi Trang</a>
             </div>
           </div>
@@ -277,7 +277,7 @@ const Home = () => (
               <p>Đừng để rắc rối về giấy tờ làm mất thời gian của bạn. Gọi ngay cho đội ngũ chuyên gia của chúng tôi để được phục vụ tận tâm nhất.</p>
               <p><strong>Hotline/Zalo:</strong> <span className="hotline-text">033 886 9096 - 0933 648 728</span></p>
               <p><strong>Địa chỉ:</strong> 282 Nơ Trang Long, Phường Bình Thạnh, Thành Phố Hồ Chí Minh</p>
-              <p><strong>Website:</strong> dichvusangten.com.vn</p>
+              <p><strong>Website:</strong> dichvusangtenhcm.com</p>
 
             </div>
 
