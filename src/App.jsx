@@ -84,7 +84,25 @@ const Header = () => {
 };
 
 // --- Footer Component ---
-const Footer = () => (
+const Footer = () => {
+  const [visitors, setVisitors] = React.useState(0);
+  const [online, setOnline] = React.useState(0);
+
+  React.useEffect(() => {
+    // Tự động tính toán khách giả lập thông minh
+    const launchDate = new Date('2026-08-20').getTime();
+    const now = new Date().getTime();
+    const daysSince = Math.floor((now - launchDate) / (1000 * 60 * 60 * 24));
+    
+    // Ngày nào cũng tăng đều đặn, cộng thêm yếu tố ngẫu nhiên theo giờ để trông chân thực
+    const calculateVisitors = 25820 + (daysSince * 55) + new Date().getHours() * 3 + Math.floor(Math.random() * 15);
+    setVisitors(calculateVisitors);
+    
+    // Số người đang online ngẫu nhiên từ 3 đến 12 người
+    setOnline(Math.floor(Math.random() * 9) + 3);
+  }, []);
+
+  return (
   <>
     <footer className="footer">
         <div className="container footer-grid">
@@ -120,6 +138,14 @@ const Footer = () => (
               <a href="https://www.facebook.com/qui.nguyenhoang.184" target="_blank" rel="noopener noreferrer" className="btn-fb"><i className="fab fa-facebook"></i> Theo dõi Trang</a>
             </div>
           </div>
+
+          <div className="footer-col">
+            <h3>Thống kê truy cập</h3>
+            <div className="stats-box">
+              <p><i className="fa fa-users"></i> Lượt truy cập: <strong style={{color: '#fff', fontSize: '18px'}}>{visitors.toLocaleString()}</strong></p>
+              <p><i className="fa fa-circle-dot" style={{color: '#22c55e', fontSize: '12px'}}></i> Đang online: <strong style={{color: '#22c55e', fontSize: '18px'}}>{online}</strong></p>
+            </div>
+          </div>
         </div>
         <div className="footer-bottom">
           <div className="container">
@@ -149,7 +175,8 @@ const Footer = () => (
         </a>
       </div>
   </>
-);
+  );
+};
 
 // --- Page Components ---
 const Home = () => (
