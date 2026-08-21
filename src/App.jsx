@@ -15,6 +15,10 @@ const Header = () => {
             <a href="tel:0338869096">
               <i className="fa fa-phone"></i> 033 886 9096
             </a>
+            <span style={{color: 'rgba(255,255,255,0.3)', margin: '0 8px'}}>|</span>
+            <a href="tel:0933648728">
+              <i className="fa fa-phone"></i> 0933 648 728
+            </a>
             <a href="mailto:hoangqui2004qn@gmail.com">
               <i className="fa fa-envelope"></i> hoangqui2004qn@gmail.com
             </a>
@@ -90,7 +94,7 @@ const Footer = () => (
             </div>
             <p>Trung Tâm Dịch Vụ Sang Tên Xe TP Hồ Chí Minh</p>
             <p><strong>Địa chỉ:</strong> 282 Nơ Trang Long, Phường Bình Thạnh, Thành Phố Hồ Chí Minh</p>
-            <p><strong>SĐT/Zalo:</strong> 033 886 9096</p>
+            <p><strong>SĐT/Zalo:</strong> 033 886 9096 - 0933 648 728</p>
             <p><strong>Email:</strong> hoangqui2004qn@gmail.com</p>
             <div className="footer-socials">
               <a href="https://www.facebook.com/qui.nguyenhoang.184" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
@@ -128,10 +132,15 @@ const Footer = () => (
       <div className="floating-contact">
         <a href="tel:0338869096" className="float-btn phone">
           <i className="fa fa-phone"></i>
-          <span className="tooltip-label">Hotline: 0338869096</span>
+          <span className="tooltip-label">Hotline: 033.886.9096 - 0933.648.728</span>
         </a>
         <a href="https://zalo.me/0338869096" className="float-btn zalo">
-          <span style={{ color: '#0068ff', fontWeight: 900, fontSize: '14px', letterSpacing: '-0.5px' }}>Zalo</span>
+          <div style={{ width: '34px', height: '34px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%' }}>
+              <path d="M21.544 11.049c0-4.436-3.87-8.031-8.644-8.031-4.773 0-8.643 3.595-8.643 8.031 0 3.393 2.27 6.302 5.56 7.49.191.069.298.243.25.437l-.546 2.05c-.092.347.26.65.57.494l2.585-1.294c.143-.071.309-.089.462-.05 1.096.275 2.257.29 3.344.025 3.593-1.025 5.062-4.8 5.062-9.152z" fill="#0068FF"/>
+              <path d="M10.15 13.916h-2.12c-.22 0-.376-.226-.264-.42l2.366-4.08c.113-.194-.027-.416-.25-.416H7.59c-.173 0-.317-.142-.317-.317V7.618c0-.175.144-.317.317-.317h2.292c.22 0 .376.226.264.42l-2.366 4.08c-.113.194.027.416.25.416h2.292c.173 0 .317.142.317.317v1.065c0 .175-.144.317-.317.317zM16.592 10.732c0 2.21-1.748 4.004-3.905 4.004-2.155 0-3.904-1.794-3.904-4.004 0-2.21 1.749-4.004 3.904-4.004 2.157 0 3.905 1.794 3.905 4.004zm-1.636 0c0-1.282-1.015-2.32-2.269-2.32-1.254 0-2.268 1.038-2.268 2.32 0 1.282 1.014 2.32 2.268 2.32 1.254 0 2.269-1.038 2.269-2.32z" fill="#FFF"/>
+            </svg>
+          </div>
           <span className="tooltip-label" style={{background: '#0068ff'}}>Chat Zalo ngay</span>
         </a>
         <a href="https://m.me/qui.nguyenhoang.184" target="_blank" rel="noopener noreferrer" className="float-btn mess">
@@ -165,7 +174,7 @@ const Home = () => (
             <div className="promo-banner">
               <h2>CÀ SỐ KHUNG SỐ MÁY TẬN NHÀ</h2>
               <p className="highlight">Nhanh Chóng - Giá Rẻ</p>
-              <p className="hotline">HOTLINE: 0338 86 9096</p>
+              <p className="hotline">HOTLINE: 0338.86.9096 - 0933.648.728</p>
             </div>
 
             <div className="article-body">
@@ -266,7 +275,7 @@ const Home = () => (
 
               <h3>5. Thông tin liên hệ trực tiếp</h3>
               <p>Đừng để rắc rối về giấy tờ làm mất thời gian của bạn. Gọi ngay cho đội ngũ chuyên gia của chúng tôi để được phục vụ tận tâm nhất.</p>
-              <p><strong>Hotline/Zalo:</strong> <span className="hotline-text">033 886 9096</span></p>
+              <p><strong>Hotline/Zalo:</strong> <span className="hotline-text">033 886 9096 - 0933 648 728</span></p>
               <p><strong>Địa chỉ:</strong> 282 Nơ Trang Long, Phường Bình Thạnh, Thành Phố Hồ Chí Minh</p>
               <p><strong>Website:</strong> dichvusangten.com.vn</p>
 
@@ -321,7 +330,7 @@ const ProceduresPage = () => (
             <li>Căn cước công dân của chủ mới</li>
             <li>Tờ khai đăng ký xe theo mẫu quy định (Cà số)</li>
           </ul>
-          <p>Nếu bạn gặp khó khăn trong công đoạn chuẩn bị hồ sơ giấy tờ, hãy liên hệ ngay Hotline/Zalo <strong>033 886 9096</strong> để được tư vấn nhé!</p>
+          <p>Nếu bạn gặp khó khăn trong công đoạn chuẩn bị hồ sơ giấy tờ, hãy liên hệ ngay Hotline <strong>033.886.9096</strong> hoặc <strong>0933.648.728</strong> để được tư vấn nhé!</p>
         </div>
       </div>
     </div>
@@ -351,12 +360,12 @@ const ContactPage = () => (
       <div className="content-wrapper">
         <div className="promo-banner" style={{ background: 'linear-gradient(135deg, #e63946, #c1121f)' }}>
           <h2>LIÊN HỆ VỚI CHÚNG TÔI</h2>
-          <p className="hotline" style={{ color: '#fff' }}>0338 86 9096</p>
+          <p className="hotline" style={{ color: '#fff', fontSize: '26px' }}>033 886 9096 - 0933 648 728</p>
         </div>
         <div className="article-body">
           <h3>Thông tin văn phòng:</h3>
           <p><strong>Địa chỉ:</strong> 282 Nơ Trang Long, Phường Bình Thạnh, Thành Phố Hồ Chí Minh</p>
-          <p><strong>Điện thoại/Zalo:</strong> 033 886 9096</p>
+          <p><strong>Điện thoại/Zalo:</strong> 033 886 9096 - 0933 648 728</p>
           <p><strong>Email:</strong> hoangqui2004qn@gmail.com</p>
           <br/>
           <p><em>Chúng tôi phục vụ lưu động tận nơi tại tất cả các quận huyện trong TPHCM. Có mặt nhanh chóng sau 15 phút tư vấn.</em></p>
