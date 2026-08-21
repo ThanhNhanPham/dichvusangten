@@ -1,0 +1,5 @@
+/* Reset file to prevent conflict with App.css */
+body {
+    margin: 0;
+    padding: 0;
+}
