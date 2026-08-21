@@ -653,12 +653,18 @@ table .price {
     position: relative;
     border: 3px solid #fff;
     z-index: 2;
+    animation: continuousPulse 2s infinite ease-in-out;
 }
 
-/* Specific button core colors */
-.float-btn.phone { background-color: #e63946; } /* Default red phone */
-.float-btn.zalo { background-color: #fff; box-shadow: 0 4px 15px rgba(0,104,255,0.2); }
-.float-btn.mess { background-color: #0084ff; }
+@keyframes continuousPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(0.85); box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+}
+
+/* Specific button core colors & Delays */
+.float-btn.phone { background-color: #e63946; animation-delay: 0s; } /* Default red phone */
+.float-btn.zalo { background-color: #fff; box-shadow: 0 4px 15px rgba(0,104,255,0.2); animation-delay: 0.25s; }
+.float-btn.mess { background-color: #0084ff; animation-delay: 0.5s; }
 
 /* The Expanding Tooltip Label */
 .float-btn .tooltip-label {
@@ -690,6 +696,7 @@ table .price {
 /* Base button hover interaction */
 .float-btn:hover {
     transform: scale(1.05) translateY(-2px);
+    animation-play-state: paused;
 }
 
 /* =============== RESPONSIVE =============== */

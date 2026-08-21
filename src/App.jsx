@@ -209,17 +209,17 @@ const Home = () => (
                   <tr>
                     <td data-label="Loại phương tiện"><strong>Ô tô con (Dưới 9 chỗ)</strong></td>
                     <td data-label="Đặc điểm xử lý">Vị trí khó, máy nóng vẫn xử lý tốt</td>
-                    <td data-label="Giá dịch vụ (VNĐ)"><strong>500.000</strong></td>
+                    <td data-label="Giá dịch vụ (VNĐ)" className="price">Liên hệ tư vấn</td>
                   </tr>
                   <tr>
                     <td data-label="Loại phương tiện"><strong>Xe tải dưới 2 tấn / Xe khách</strong></td>
                     <td data-label="Đặc điểm xử lý">Vệ sinh lốc máy trước khi cà</td>
-                    <td data-label="Giá dịch vụ (VNĐ)"><strong>500.000</strong></td>
+                    <td data-label="Giá dịch vụ (VNĐ)" className="price">Liên hệ tư vấn</td>
                   </tr>
                   <tr>
                     <td data-label="Loại phương tiện"><strong>Xe tải trên 2 tấn / Xe ben</strong></td>
                     <td data-label="Đặc điểm xử lý">Xử lý số rỉ sét, dầu mỡ</td>
-                    <td data-label="Giá dịch vụ (VNĐ)"><strong>500.000</strong></td>
+                    <td data-label="Giá dịch vụ (VNĐ)" className="price">Liên hệ tư vấn</td>
                   </tr>
                 </tbody>
               </table>
